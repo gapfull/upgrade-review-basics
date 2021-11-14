@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Iteración #5: Función rollDice - Gonzalo Arechavala</title>
+
+    <script>
+
+        // Iteración #5: Función rollDice 
+
+        // Crea una función llamada **rollDice()** que reciba como parametro el numero de caras que queramos que tenga el dado que deberá silumar el codigo dentro de la función. Como hemos dicho, que la función use el parametro para simular una tirada de dado y retornar el resultado. Si no se te ocurre como hacer un numero aleatorio no te preocupes! busca información sobre la función de javascript **Math.random();**
+
+        // Se entiende que debe hacerse un dado automatico que debe mostar un valor en funcion de su numero de caras:
+        // Dado de 6 caras, puntos de 1 al 6. Dado de 12 caras, puntos de 1 al 12,
+
+        // Math.random() Retorna un número aleatorio entre 0 (incluido) y 1 (excluido)
+        // Math.floor Devuelve el máximo entero menor o igual a un número.
+
+        // Hacemos un random por el numero de caras mas uno, y le hacemos un florr para que devuelva el entero menor.
+
+        let caras = 12;
+
+        function rollDice(numero) {
+            console.log(`Has obtenido una puntuacion de: ${Math.floor(Math.random() * numero + 1)}`);
+        }
+
+        rollDice(caras);
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Iteración #5: Función rollDice - Gonzalo Arechavala</h1>
+    <p>Para visualizar los resultados de los ejercicios debe abrirse la consola del navegador.</p>
+
+</body>
+
+</html>

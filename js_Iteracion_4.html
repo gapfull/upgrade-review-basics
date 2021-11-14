@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Iteración #4: Métodos findArrayIndex - Gonzalo Arechavala</title>
+
+    <script>
+
+        // Iteración #4: Métodos findArrayIndex
+        // Crea una función llamada `findArrayIndex` que reciba como parametros un array de textos y un texto y devuelve la posición del array cuando el valor del array sea igual al valor del texto que enviaste como parametro. Haz varios ejemplos y compruebalos.
+
+        // Sugerencia de función:
+
+        const animales = ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];
+        let animalABuscar = 'Ajolote'
+
+        function findArrayIndex(array, text) {
+            if (array.includes(text)) {
+                console.log(`El animal ${animalABuscar} ocupa el lugar ${array.indexOf(text)} del array (indice del array).`);
+            }
+        }
+
+        findArrayIndex(animales, animalABuscar);
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Iteración #4: Métodos findArrayIndex - Gonzalo Arechavala</h1>
+    <p>Para visualizar los resultados de los ejercicios debe abrirse la consola del navegador.</p>
+
+</body>
+
+</html>

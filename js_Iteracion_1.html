@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Iteración #1: Mix for e includes - Gonzalo Arechavala</title>
+
+    <script>
+
+        // Iteración #1: Mix for e includes
+        // Dado el siguiente javascript usa forof para recorrer el array de películas, genera un nuevo array con las categorías de las películas e imprime por consola el array de categorías. Ten en cuenta que las categorías no deberían repetirse. Para filtrar las categorías puedes ayudarte de la función **.includes()**
+
+        const movies = [
+            { title: 'Madaraspar', duration: 192, categories: ['comedia', 'aventura'] },
+            { title: 'Spiderpan', duration: 122, categories: ['aventura', 'acción'] },
+            { title: 'Solo en Whatsapp', duration: 223, categories: ['comedia', 'thriller'] },
+            { title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación'] },
+        ]
+
+        let categories = [];
+        for (const movie of movies) {
+            movie.categories.forEach(elemento => {
+
+                if (categories.includes(elemento)) {
+                    console.log("Categoria repetida: " + elemento);
+                } else {
+                    categories.push(elemento);
+                }
+            });
+        }
+        console.log(categories);
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Iteración #1: Mix for e includes - Gonzalo Arechavala</h1>
+    <p>Para visualizar los resultados de los ejercicios debe abrirse la consola del navegador.</p>
+
+</body>
+
+</html>
